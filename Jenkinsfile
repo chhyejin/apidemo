@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/urstory/apirdsdemo.git', credentialsId: 'carami_github_id'
+                git branch: 'main', url: 'https://github.com/chhyejin/apidemo.git', credentialsId: 'chhyejin'
             }
         }
         stage('Build') {
