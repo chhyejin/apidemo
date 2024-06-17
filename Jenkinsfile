@@ -23,7 +23,9 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying...'
-                // deploy steps
+                 withAWS(credentials: 'hyejin') {
+                                    sh 'aws s3 cp build/libs/apidemo-0.0.1-SNAPSHOT.jar s3://hyejin-static-website-bucket/'
+                 }
             }
         }
     }
