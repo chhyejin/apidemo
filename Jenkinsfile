@@ -3,10 +3,10 @@ pipeline {
 
     environment {
             AWS_DEFAULT_REGION = 'ap-northeast-2'
-            S3_BUCKET = 'carami-build-files'
-            JAR_FILE = 'build/libs/apirdsdemo-0.0.1-SNAPSHOT.jar'
-            APP_NAME = 'apirdsdemo'
-            DEPLOY_GROUP = 'apirdsdemo-group-name'
+            S3_BUCKET = 'hyejin-static-website-bucket'
+            JAR_FILE = 'build/libs/apidemo-0.0.1-SNAPSHOT.jar'
+            APP_NAME = 'apidemo'
+            DEPLOY_GROUP = 'apidemo-groupg'
             DEPLOY_ZIP = 'deployment.zip'
         }
 
