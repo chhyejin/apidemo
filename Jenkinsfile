@@ -6,7 +6,7 @@ pipeline {
             S3_BUCKET = 'hyejin-static-website-bucket'
             JAR_FILE = 'build/libs/apidemo-0.0.1-SNAPSHOT.jar'
             APP_NAME = 'apidemo'
-            DEPLOY_GROUP = 'apidemo-groupg'
+            DEPLOY_GROUP = 'apidemo-group'
             DEPLOY_ZIP = 'deployment.zip'
         }
 
