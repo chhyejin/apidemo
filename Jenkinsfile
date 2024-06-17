@@ -10,7 +10,8 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building...'
-                // build steps
+                sh 'chmod 755 ./gradlew'
+                sh './gradlew build'
             }
         }
         stage('Test') {
