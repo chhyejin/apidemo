@@ -20,11 +20,11 @@ public class InfoController {
 
         // Get server IP address
         String serverIp = InetAddress.getLocalHost().getHostAddress();
-        response.put("serverIp", serverIp);
+        response.put("serverIp_action", serverIp);
 
         // Get current time
         String currentTime = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
-        response.put("currentTime", currentTime);
+        response.put("currentTime_action", currentTime);
 
         return response;
     }
