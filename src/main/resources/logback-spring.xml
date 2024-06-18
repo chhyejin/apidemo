@@ -7,7 +7,7 @@
     </appender>
 
     <appender name="ROLLING" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>/home/ec2-user/app/logs/apidemo.log</file>
+        <file>./app/logs/apidemo.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!-- 롤링 파일 이름 형식 -->
             <fileNamePattern>/home/ec2-user/app/logs/apidemo.%d{yyyy-MM-dd}.log</fileNamePattern>
